@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: rgb(0, 153, 255);
+            color: white;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: ' 🔗';
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.jw.org/pt/" target="_blank">Página Inícial</a></li>
+        <li><a href="https://www.jw.org/pt/biblioteca/series/outros-assuntos/ser-feliz-mundo-imprevisivel/" target="_blank">Artigo em destaque</a></li>
+        <li><a href="https://www.jw.org/pt/noticias/por-regiao/mundial/Boletim-do-Corpo-Governante-2024-n%C2%BA-8/" target="_blank">boletim</a></li>
+    </ul>
+</body>
+</html>
