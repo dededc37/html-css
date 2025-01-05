@@ -21,11 +21,6 @@ body {
     background-color: white;
 }
 
-main {
-    background-color: var(--cor3);
-    max-width: 1000px;
-}
-
 header {
     min-width: 150px;
     padding: 10px;
@@ -62,4 +57,14 @@ nav a {
 nav a.ativo, a:hover  {
     background-color: #00476b;
     color: var(--cor0);
+}
+
+#mapa {
+    margin: auto;
+    border-radius: 10px;
+    font-size: 5em;
+    color: white;
+    height: 500px;
+    width: 95%;
+    background-image: url(imagens/pexels-myersmc16-919188.jpg);
 }
