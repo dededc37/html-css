@@ -10,9 +10,9 @@
         }
 
         table {
-            width: 95%;
+            width: 350px;
+            height: 350px;
             border-collapse: collapse;
-            border: 5px double red;
         }
 
         tr.linha {
@@ -22,6 +22,12 @@
         td {
             border: 1px solid blue;
             padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .numero {
+            text-align: right;
         }
 
     </style>
@@ -29,7 +35,7 @@
 <body>
     <h1>Minha primeira tabela</h1>
     <table>
-        <tr class="linha">
+        <tr>
             <td>a1</td>
             <td>b1</td>
             <td>c1</td>
@@ -37,12 +43,12 @@
         <tr>
             <td>a2</td>
             <td>b2</td>
-            <td>c2</td>
+            <td class="numero">c2</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>a3</td>
             <td>b3</td>
-            <td>c3</td>
+            <td class="numero">c3</td>
         </tr>
         <tr>
             <td>a4</td>
