@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/mediaqueryes.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
@@ -24,13 +25,21 @@
     <main>
         <article>
             <h2>Testando Media Queryes</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non autem tempora cum dolores cumque sapiente odio suscipit, qui ipsam soluta ad vitae voluptatibus quae rerum iste, maiores unde, earum asperiores.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo veniam at accusamus alias, velit dolor, amet commodi consectetur, quae incidunt vero numquam officia. Voluptatum, distinctio iusto? Asperiores maiores laboriosam modi?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nobis alias laborum recusandae nesciunt impedit commodi earum cumque molestias incidunt accusantium fuga, dicta distinctio delectus provident? Voluptatem hic qui nesciunt?
-            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non autem tempora cum dolores cumque sapiente odio suscipit, qui ipsam soluta ad vitae voluptatibus quae rerum iste, maiores unde, earum asperiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae blanditiis animi neque cumque provident maiores nostrum soluta incidunt! Laboriosam nam numquam facilis voluptate pariatur molestiae tempora rem aliquam, asperiores aspernatur!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo veniam at accusamus alias, velit dolor, amet commodi consectetur, quae incidunt vero numquam officia. Voluptatum, distinctio iusto? Asperiores maiores laboriosam modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis rerum voluptas nostrum, vero sequi, ducimus explicabo quos eaque pariatur illum saepe? Aliquid nulla iure delectus blanditiis beatae quas eaque dicta.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nobis alias laborum recusandae nesciunt impedit commodi earum cumque molestias incidunt accusantium fuga, dicta distinctio delectus provident? Voluptatem hic qui nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae perspiciatis rem voluptates facere aperiam, eius iste libero sed? Porro adipisci ipsam qui quam dolores, accusantium facere vitae vel nesciunt?</p>
         </article>
     </main>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth > 767) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
